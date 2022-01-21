@@ -1,0 +1,4 @@
+#!/bin/sh
+cmd="${1:-status}" 
+set -ex
+systemctl $cmd osmo-hlr osmo-msc osmo-stp osmo-ggsn osmo-sgsn osmo-mgw osmo-bsc osmo-sip-connector
